@@ -11,7 +11,9 @@ import SwiftUI
 struct NasaGallaryApp: App {
     var body: some Scene {
         WindowGroup {
-            GallaryGridView()
+            NavigationView{
+                GallaryGridView()
+            }
         }
     }
 }

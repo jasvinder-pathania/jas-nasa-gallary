@@ -7,13 +7,15 @@
 
 import Foundation
 
-import SwiftUI
-
-struct PictureModel:  Decodable {
+struct PictureModel:  Decodable, Equatable {
     var copyright: String?
     var title: String
     var explanation: String
     var date: String
     var url: String
+    var dateObj: Date?
 }
 
+extension PictureModel: Identifiable {
+    var id: String { return title }
+}

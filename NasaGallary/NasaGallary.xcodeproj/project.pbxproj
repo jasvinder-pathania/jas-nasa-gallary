@@ -24,6 +24,7 @@
 		2A368E2F28D71468006638B1 /* GallaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368E2B28D71468006638B1 /* GallaryDetailView.swift */; };
 		2A368E3228D71554006638B1 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368E3128D71554006638B1 /* NetworkReachability.swift */; };
 		2A368E3428D7157C006638B1 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368E3328D7157C006638B1 /* DateConverter.swift */; };
+		2A368E3728D71B85006638B1 /* RoundedVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368E3628D71B85006638B1 /* RoundedVStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		2A368E2B28D71468006638B1 /* GallaryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GallaryDetailView.swift; sourceTree = "<group>"; };
 		2A368E3128D71554006638B1 /* NetworkReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 		2A368E3328D7157C006638B1 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
+		2A368E3628D71B85006638B1 /* RoundedVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedVStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,10 +240,19 @@
 		2A368E3028D71554006638B1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2A368E3528D71B6A006638B1 /* ViewModifiers */,
 				2A368E3128D71554006638B1 /* NetworkReachability.swift */,
 				2A368E3328D7157C006638B1 /* DateConverter.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		2A368E3528D71B6A006638B1 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2A368E3628D71B85006638B1 /* RoundedVStack.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +398,7 @@
 				2A368E3428D7157C006638B1 /* DateConverter.swift in Sources */,
 				2A368E2E28D71468006638B1 /* GallaryGridView.swift in Sources */,
 				2A368E2C28D71468006638B1 /* GallaryViewModel.swift in Sources */,
+				2A368E3728D71B85006638B1 /* RoundedVStack.swift in Sources */,
 				2A368DDE28D6E822006638B1 /* ContentView.swift in Sources */,
 				2A368E2D28D71468006638B1 /* PictureModel.swift in Sources */,
 				2A368DDC28D6E822006638B1 /* NasaGallaryApp.swift in Sources */,

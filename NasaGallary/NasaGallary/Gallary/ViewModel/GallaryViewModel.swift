@@ -10,10 +10,14 @@ import SwiftUI
 
 class GallaryViewModel: ObservableObject{
     @Published var pictureArray: [PictureModel] = []
+    @Published var currentPictureObject: PictureModel?
+    @Published var currentIndex = 0
     
     /// initialization
     init(){
         self.pictureArray = self.readDataFromJsonFile(fileName: "data")
+        self.dateFormatConversion()
+        self.sortByLatestDate()
     }
     
     ///read data from json file
@@ -31,5 +35,30 @@ class GallaryViewModel: ObservableObject{
         }
     }
     
+    /// date format conversion to set date object
+     func dateFormatConversion() {
+         let dateConverter = DateConverter()
+        for (index, photo) in self.pictureArray.enumerated() {
+            if let date = dateConverter.convertReceivedDateStringToDateObject(dateStr: photo.date){
+                self.pictureArray[index].date = dateConverter.convertDateObjectToDesiredDateString(date: date)
+                self.pictureArray[index].dateObj = date
+            }
+        }
+    }
+    
+    /// sorting pictures by latest date
+    func sortByLatestDate(){
+        self.pictureArray = self.pictureArray.sorted {$0.dateObj! > $1.dateObj!}
+    }
+    
+    /// getting current picture object from the list
+    func getCurrentPictureObject(imageTitle: String) {
+        self.currentPictureObject = self.pictureArray.filter{ $0.title == imageTitle }.first
+    }
+    
+    /// getting selected picture object index from the list
+    func getIndexOfCurrentPictureObject() {
+        self.currentIndex = self.pictureArray.firstIndex(where: {$0 == self.currentPictureObject}) ?? 0
+    }
 
 }
