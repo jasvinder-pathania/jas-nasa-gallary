@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		2A368DDC28D6E822006638B1 /* NasaGallaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DDB28D6E822006638B1 /* NasaGallaryApp.swift */; };
 		2A368DDE28D6E822006638B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DDD28D6E822006638B1 /* ContentView.swift */; };
-		2A368DE028D6E823006638B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A368DDF28D6E823006638B1 /* Assets.xcassets */; };
 		2A368DE328D6E823006638B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A368DE228D6E823006638B1 /* Preview Assets.xcassets */; };
 		2A368DED28D6E823006638B1 /* NasaGallaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DEC28D6E823006638B1 /* NasaGallaryTests.swift */; };
 		2A368DF728D6E824006638B1 /* NasaGallaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DF628D6E824006638B1 /* NasaGallaryUITests.swift */; };
 		2A368DF928D6E824006638B1 /* NasaGallaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DF828D6E824006638B1 /* NasaGallaryUITestsLaunchTests.swift */; };
 		2A368E0728D6E986006638B1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2A368E0628D6E986006638B1 /* SDWebImageSwiftUI */; };
+		2A368E0F28D6EAC3006638B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A368E0E28D6EAC3006638B1 /* Assets.xcassets */; };
+		2A368E1128D6EB26006638B1 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A368E1028D6EB26006638B1 /* Color.xcassets */; };
+		2A368E1328D6EBB1006638B1 /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368E1228D6EBB1006638B1 /* PictureModel.swift */; };
+		2A368E1528D6EBC8006638B1 /* GallaryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368E1428D6EBC8006638B1 /* GallaryGridView.swift */; };
+		2A368E1728D6EBD8006638B1 /* GallaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368E1628D6EBD8006638B1 /* GallaryDetailView.swift */; };
+		2A368E1928D6EC1E006638B1 /* GallaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368E1828D6EC1E006638B1 /* GallaryViewModel.swift */; };
+		2A368E1B28D6EC35006638B1 /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368E1A28D6EC35006638B1 /* Color+Custom.swift */; };
+		2A368E1D28D6EC56006638B1 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368E1C28D6EC56006638B1 /* NetworkReachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,13 +45,20 @@
 		2A368DD828D6E822006638B1 /* NasaGallary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaGallary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A368DDB28D6E822006638B1 /* NasaGallaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaGallaryApp.swift; sourceTree = "<group>"; };
 		2A368DDD28D6E822006638B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2A368DDF28D6E823006638B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A368DE228D6E823006638B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A368DE828D6E823006638B1 /* NasaGallaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaGallaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A368DEC28D6E823006638B1 /* NasaGallaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaGallaryTests.swift; sourceTree = "<group>"; };
 		2A368DF228D6E824006638B1 /* NasaGallaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaGallaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A368DF628D6E824006638B1 /* NasaGallaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaGallaryUITests.swift; sourceTree = "<group>"; };
 		2A368DF828D6E824006638B1 /* NasaGallaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaGallaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A368E0E28D6EAC3006638B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A368E1028D6EB26006638B1 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		2A368E1228D6EBB1006638B1 /* PictureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
+		2A368E1428D6EBC8006638B1 /* GallaryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryGridView.swift; sourceTree = "<group>"; };
+		2A368E1628D6EBD8006638B1 /* GallaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryDetailView.swift; sourceTree = "<group>"; };
+		2A368E1828D6EC1E006638B1 /* GallaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryViewModel.swift; sourceTree = "<group>"; };
+		2A368E1A28D6EC35006638B1 /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
+		2A368E1C28D6EC56006638B1 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +112,12 @@
 			children = (
 				2A368DDB28D6E822006638B1 /* NasaGallaryApp.swift */,
 				2A368DDD28D6E822006638B1 /* ContentView.swift */,
-				2A368DDF28D6E823006638B1 /* Assets.xcassets */,
+				2A368E0C28D6EA66006638B1 /* Model */,
+				2A368E0828D6EA66006638B1 /* View */,
+				2A368E0928D6EA66006638B1 /* ViewModel */,
+				2A368E0A28D6EA66006638B1 /* Extensions */,
+				2A368E0D28D6EA66006638B1 /* Utitlity */,
+				2A368E0B28D6EA66006638B1 /* Resources */,
 				2A368DE128D6E823006638B1 /* Preview Content */,
 			);
 			path = NasaGallary;
@@ -127,6 +146,56 @@
 				2A368DF828D6E824006638B1 /* NasaGallaryUITestsLaunchTests.swift */,
 			);
 			path = NasaGallaryUITests;
+			sourceTree = "<group>";
+		};
+		2A368E0828D6EA66006638B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A368E1428D6EBC8006638B1 /* GallaryGridView.swift */,
+				2A368E1628D6EBD8006638B1 /* GallaryDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A368E0928D6EA66006638B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2A368E1828D6EC1E006638B1 /* GallaryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2A368E0A28D6EA66006638B1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A368E1A28D6EC35006638B1 /* Color+Custom.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2A368E0B28D6EA66006638B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A368E1028D6EB26006638B1 /* Color.xcassets */,
+				2A368E0E28D6EAC3006638B1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2A368E0C28D6EA66006638B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A368E1228D6EBB1006638B1 /* PictureModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A368E0D28D6EA66006638B1 /* Utitlity */ = {
+			isa = PBXGroup;
+			children = (
+				2A368E1C28D6EC56006638B1 /* NetworkReachability.swift */,
+			);
+			path = Utitlity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +308,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A368E0F28D6EAC3006638B1 /* Assets.xcassets in Resources */,
 				2A368DE328D6E823006638B1 /* Preview Assets.xcassets in Resources */,
-				2A368DE028D6E823006638B1 /* Assets.xcassets in Resources */,
+				2A368E1128D6EB26006638B1 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A368E1328D6EBB1006638B1 /* PictureModel.swift in Sources */,
+				2A368E1928D6EC1E006638B1 /* GallaryViewModel.swift in Sources */,
+				2A368E1728D6EBD8006638B1 /* GallaryDetailView.swift in Sources */,
+				2A368E1B28D6EC35006638B1 /* Color+Custom.swift in Sources */,
+				2A368E1528D6EBC8006638B1 /* GallaryGridView.swift in Sources */,
 				2A368DDE28D6E822006638B1 /* ContentView.swift in Sources */,
 				2A368DDC28D6E822006638B1 /* NasaGallaryApp.swift in Sources */,
+				2A368E1D28D6EC56006638B1 /* NetworkReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
