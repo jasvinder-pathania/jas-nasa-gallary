@@ -15,23 +15,25 @@ class GallaryViewModel: ObservableObject{
     
     /// initialization
     init(){
-        self.pictureArray = self.readDataFromJsonFile(fileName: "data")
+        if let fileData = self.readDataFromJsonFile(fileName: "data") {
+            self.pictureArray = fileData
+        }
         self.dateFormatConversion()
         self.sortByLatestDate()
     }
     
     ///read data from json file
-     func readDataFromJsonFile(fileName: String) -> [PictureModel]{
+     func readDataFromJsonFile(fileName: String) -> [PictureModel]?{
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json"),
            let data = try? Data(contentsOf: url) {
             let decoder = JSONDecoder()
             if let jsonData = try? decoder.decode([PictureModel].self, from: data) {
                 return jsonData
             }else{
-                return []
+                return nil
             }
         }else{
-            return []
+            return nil
         }
     }
     
