@@ -14,6 +14,7 @@
 		2A368DED28D6E823006638B1 /* NasaGallaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DEC28D6E823006638B1 /* NasaGallaryTests.swift */; };
 		2A368DF728D6E824006638B1 /* NasaGallaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DF628D6E824006638B1 /* NasaGallaryUITests.swift */; };
 		2A368DF928D6E824006638B1 /* NasaGallaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DF828D6E824006638B1 /* NasaGallaryUITestsLaunchTests.swift */; };
+		2A368E0728D6E986006638B1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2A368E0628D6E986006638B1 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A368E0728D6E986006638B1 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = NasaGallary;
+			packageProductDependencies = (
+				2A368E0628D6E986006638B1 /* SDWebImageSwiftUI */,
+			);
 			productName = NasaGallary;
 			productReference = 2A368DD828D6E822006638B1 /* NasaGallary.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 2A368DCF28D6E822006638B1;
+			packageReferences = (
+				2A368E0528D6E986006638B1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 2A368DD928D6E822006638B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A368E0528D6E986006638B1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A368E0628D6E986006638B1 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A368E0528D6E986006638B1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2A368DD028D6E822006638B1 /* Project object */;
 }
