@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2A368DDC28D6E822006638B1 /* NasaGallaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DDB28D6E822006638B1 /* NasaGallaryApp.swift */; };
-		2A368DDE28D6E822006638B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DDD28D6E822006638B1 /* ContentView.swift */; };
 		2A368DE328D6E823006638B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A368DE228D6E823006638B1 /* Preview Assets.xcassets */; };
 		2A368DED28D6E823006638B1 /* NasaGallaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DEC28D6E823006638B1 /* NasaGallaryTests.swift */; };
 		2A368DF728D6E824006638B1 /* NasaGallaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DF628D6E824006638B1 /* NasaGallaryUITests.swift */; };
@@ -47,7 +46,6 @@
 /* Begin PBXFileReference section */
 		2A368DD828D6E822006638B1 /* NasaGallary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaGallary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A368DDB28D6E822006638B1 /* NasaGallaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaGallaryApp.swift; sourceTree = "<group>"; };
-		2A368DDD28D6E822006638B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A368DE228D6E823006638B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A368DE828D6E823006638B1 /* NasaGallaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaGallaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A368DEC28D6E823006638B1 /* NasaGallaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaGallaryTests.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 				2A368DDB28D6E822006638B1 /* NasaGallaryApp.swift */,
 				2A368E2028D71468006638B1 /* Gallary */,
 				2A368E2728D71468006638B1 /* GallaryDetail */,
-				2A368DDD28D6E822006638B1 /* ContentView.swift */,
 				2A368E3028D71554006638B1 /* Utils */,
 				2A368E0A28D6EA66006638B1 /* Extensions */,
 				2A368E0B28D6EA66006638B1 /* Resources */,
@@ -399,7 +396,6 @@
 				2A368E2E28D71468006638B1 /* GallaryGridView.swift in Sources */,
 				2A368E2C28D71468006638B1 /* GallaryViewModel.swift in Sources */,
 				2A368E3728D71B85006638B1 /* RoundedVStack.swift in Sources */,
-				2A368DDE28D6E822006638B1 /* ContentView.swift in Sources */,
 				2A368E2D28D71468006638B1 /* PictureModel.swift in Sources */,
 				2A368DDC28D6E822006638B1 /* NasaGallaryApp.swift in Sources */,
 				2A368E3228D71554006638B1 /* NetworkReachability.swift in Sources */,
