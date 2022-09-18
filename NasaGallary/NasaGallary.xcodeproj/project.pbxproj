@@ -65,6 +65,7 @@
 		2A368E3328D7157C006638B1 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 		2A368E3628D71B85006638B1 /* RoundedVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedVStack.swift; sourceTree = "<group>"; };
 		2A368E3828D72127006638B1 /* GallaryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryViewModelTests.swift; sourceTree = "<group>"; };
+		2A368E3A28D727BD006638B1 /* nasa-gallary-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nasa-gallary-info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +168,7 @@
 				2A368E1E28D6ED58006638B1 /* data.json */,
 				2A368E1028D6EB26006638B1 /* Color.xcassets */,
 				2A368E0E28D6EAC3006638B1 /* Assets.xcassets */,
+				2A368E3A28D727BD006638B1 /* nasa-gallary-info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -564,6 +566,7 @@
 				DEVELOPMENT_TEAM = 288FJFDSBH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/NasaGallary/Resources/nasa-gallary-info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -593,6 +596,7 @@
 				DEVELOPMENT_TEAM = 288FJFDSBH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/NasaGallary/Resources/nasa-gallary-info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import NasaGallary
 
 class NasaGallaryUITests: XCTestCase {
 
