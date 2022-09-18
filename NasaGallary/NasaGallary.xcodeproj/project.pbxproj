@@ -11,7 +11,6 @@
 		2A368DE328D6E823006638B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A368DE228D6E823006638B1 /* Preview Assets.xcassets */; };
 		2A368DED28D6E823006638B1 /* NasaGallaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DEC28D6E823006638B1 /* NasaGallaryTests.swift */; };
 		2A368DF728D6E824006638B1 /* NasaGallaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DF628D6E824006638B1 /* NasaGallaryUITests.swift */; };
-		2A368DF928D6E824006638B1 /* NasaGallaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A368DF828D6E824006638B1 /* NasaGallaryUITestsLaunchTests.swift */; };
 		2A368E0728D6E986006638B1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2A368E0628D6E986006638B1 /* SDWebImageSwiftUI */; };
 		2A368E0F28D6EAC3006638B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A368E0E28D6EAC3006638B1 /* Assets.xcassets */; };
 		2A368E1128D6EB26006638B1 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A368E1028D6EB26006638B1 /* Color.xcassets */; };
@@ -52,7 +51,6 @@
 		2A368DEC28D6E823006638B1 /* NasaGallaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaGallaryTests.swift; sourceTree = "<group>"; };
 		2A368DF228D6E824006638B1 /* NasaGallaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaGallaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A368DF628D6E824006638B1 /* NasaGallaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaGallaryUITests.swift; sourceTree = "<group>"; };
-		2A368DF828D6E824006638B1 /* NasaGallaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaGallaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2A368E0E28D6EAC3006638B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A368E1028D6EB26006638B1 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		2A368E1A28D6EC35006638B1 /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				2A368DF628D6E824006638B1 /* NasaGallaryUITests.swift */,
-				2A368DF828D6E824006638B1 /* NasaGallaryUITestsLaunchTests.swift */,
 			);
 			path = NasaGallaryUITests;
 			sourceTree = "<group>";
@@ -420,7 +417,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A368DF928D6E824006638B1 /* NasaGallaryUITestsLaunchTests.swift in Sources */,
 				2A368DF728D6E824006638B1 /* NasaGallaryUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,7 +565,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/NasaGallary/Resources/nasa-gallary-info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -599,7 +595,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/NasaGallary/Resources/nasa-gallary-info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

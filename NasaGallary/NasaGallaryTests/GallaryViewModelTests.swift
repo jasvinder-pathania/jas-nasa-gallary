@@ -36,6 +36,11 @@ class GallaryViewModelTests: XCTestCase {
         }
     }
     
+    func testGallaryViewModel_array_shouldBeEmpty() throws {
+        XCTAssertFalse(viewModel.pictureArray.isEmpty)
+        XCTAssertEqual(viewModel.pictureArray.count, 26)
+    }
+    
     func testFileRead() throws {
         let value = viewModel.readDataFromJsonFile(fileName: "data")
         XCTAssertNotNil(value)
@@ -56,5 +61,26 @@ class GallaryViewModelTests: XCTestCase {
         let value = dateCoverter.convertDateObjectToDesiredDateString(date: Date())
         XCTAssertNotNil(value)
     }
-
+    
+    func testGetCurrentPictureObject_shouldNotContainObject() throws {
+        let value = viewModel.getCurrentPictureObject(imageTitle: "test title")
+        XCTAssertNil(value)
+    }
+    
+    func testGetCurrentPictureObject_shouldContainObject() throws {
+        let value = viewModel.getCurrentPictureObject(imageTitle: "Starburst Galaxy M94 from Hubble")
+        XCTAssertNotNil(value)
+    }
+    
+    func testGetIndexOfCurrentPictureObject_shouldContainObject() throws {
+        let value = viewModel.getCurrentPictureObject(imageTitle: "M33: The Triangulum Galaxy")
+        let item = viewModel.getIndexOfCurrentPictureObject(item: value)
+        XCTAssertEqual(item, 0)
+        XCTAssertNotEqual(item, -1)
+    }
+    
+    func testGetIndexOfCurrentPictureObject_shouldNotContainObject() throws {
+        let value = viewModel.getIndexOfCurrentPictureObject(item: nil)
+        XCTAssertEqual(value, -1)
+    }
 }

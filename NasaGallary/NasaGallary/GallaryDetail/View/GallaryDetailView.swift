@@ -16,7 +16,7 @@ struct GallaryDetailView: View {
         VStack{
             picturePaginationView()
         }.onAppear {
-            self.gallary.getCurrentPictureObject(imageTitle: selectedImageTitle)
+            self.getDataforGallaryViewModel(item: selectedImageTitle)
         }
         .background(Color.backgroundColor)
         .animation(.easeInOut(duration: 0.5), value: self.gallary.currentIndex)
@@ -32,8 +32,7 @@ struct GallaryDetailView: View {
         }.tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .automatic))
             .onChange(of: selectedImageTitle) { imageName in
-                self.gallary.getCurrentPictureObject(imageTitle: imageName)
-                self.gallary.getIndexOfCurrentPictureObject()
+                self.getDataforGallaryViewModel(item: imageName)
             }
         self.detailedInformationView()
     }
@@ -86,6 +85,11 @@ struct GallaryDetailView: View {
                 }
             }
         }
+    }
+    
+    func getDataforGallaryViewModel(item: String) {
+        self.gallary.currentPictureObject = self.gallary.getCurrentPictureObject(imageTitle: item)
+        self.gallary.currentIndex = self.gallary.getIndexOfCurrentPictureObject(item: self.gallary.currentPictureObject)
     }
     
 }

@@ -54,13 +54,13 @@ class GallaryViewModel: ObservableObject{
     }
     
     /// getting current picture object from the list
-    func getCurrentPictureObject(imageTitle: String) {
-        self.currentPictureObject = self.pictureArray.filter{ $0.title == imageTitle }.first
+    func getCurrentPictureObject(imageTitle: String) ->  PictureModel?{
+        return self.pictureArray.filter{ $0.title == imageTitle }.first
     }
     
     /// getting selected picture object index from the list
-    func getIndexOfCurrentPictureObject() {
-        self.currentIndex = self.pictureArray.firstIndex(where: {$0 == self.currentPictureObject}) ?? 0
+    func getIndexOfCurrentPictureObject(item: PictureModel?) -> Int {
+        return self.pictureArray.firstIndex(where: {$0 == item}) ?? -1
     }
 
 }
