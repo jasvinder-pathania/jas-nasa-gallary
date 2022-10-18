@@ -1,7 +1,7 @@
 # jas-nasa-gallary
-exercise for the process at Obvious
+exercise
 
-# Requirement mentioned in take home exercise:-
+# Requirement:-
 Screens
 
 1. Images Grid Screen
